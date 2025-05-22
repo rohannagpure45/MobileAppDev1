@@ -5,7 +5,7 @@
 
 ## Overview
 
-This app is an Android app I designed for CS 4520, Mobile App Development, that converts between various units of measure (Weight, Volume, Length). It demonstrates two different architectural patterns side-by-side: **MVP (Model-View-Presenter)** and **MVVM (Model-View-ViewModel)** within the same app. The user can navigate to either implementation from a common Home screen.
+This app is an Android app I designed for CS 4520, Mobile App Development, that converts between various units of measure (Weight, Volume, Length). It demonstrates two different architectural patterns side-by-side: **MVP** and **MVVM** within the same app. The user can navigate to either implementation from a common Home screen.
 
 ## Features
 - Convert between **Kilograms and Pounds** (weight units).
