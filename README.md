@@ -1,6 +1,8 @@
 # Android Unit Converter App
 
 ## Overview
+## Author
+**Rohan Nagpure**
 This app is a single-activity Android application that converts between various units of measure (Weight, Volume, Length). It demonstrates two different architectural patterns side-by-side: **MVP (Model-View-Presenter)** and **MVVM (Model-View-ViewModel)** within the same app. The user can navigate to either implementation from a common Home screen.
 
 ## Features
@@ -55,5 +57,4 @@ The MVVM implementation leverages Android's ViewModel to handle configuration ch
 - **Kotlin Scope Functions:** Functions like `apply` are used for cleaner initialization. For example, when setting up the spinner adapter, we use `adapter.apply { setDropDownViewResource(...) }` for brevity. Similarly, null-checks for numeric parsing use Kotlin's safe-call and Elvis operator in a clear way.
 - **ViewBinding:** Used throughout to bind UI elements, which improves code safety and readability.
 
-## Author
-**Rohan Nagpure**
+
