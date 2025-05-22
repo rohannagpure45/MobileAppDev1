@@ -25,19 +25,18 @@
 
             <Spinner
                 android:id="@+id/spinner_from"
-                android:layout_marginTop="12dp"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:prompt="From Unit"
-                android:background="@drawable/spinner_outline"/>
+                android:prompt="@string/prompt_from_unit"
+                android:background="@drawable/spinner_outline" />
 
             <Spinner
                 android:id="@+id/spinner_to"
-                android:layout_marginTop="12dp"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:prompt="To Unit"
-                android:background="@drawable/spinner_outline"/>
+                android:prompt="@string/prompt_to_unit"
+                android:background="@drawable/spinner_outline" />
+
         </LinearLayout>
 
         <View
