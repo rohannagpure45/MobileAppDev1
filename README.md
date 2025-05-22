@@ -1,8 +1,10 @@
 # Android Unit Converter App
 
-## Overview
 ## Author
 **Rohan Nagpure**
+
+## Overview
+
 This app is a single-activity Android application that converts between various units of measure (Weight, Volume, Length). It demonstrates two different architectural patterns side-by-side: **MVP (Model-View-Presenter)** and **MVVM (Model-View-ViewModel)** within the same app. The user can navigate to either implementation from a common Home screen.
 
 ## Features
