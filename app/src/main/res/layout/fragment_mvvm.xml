@@ -2,61 +2,68 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/mvvm_background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="1"
-            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <EditText
-                android:id="@+id/input_value"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:hint="Enter 1st number"
-                android:background="@drawable/edit_text_outline"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
 
-            <Spinner
-                android:id="@+id/spinner_from"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:prompt="@string/prompt_from_unit"
-                android:background="@drawable/spinner_outline" />
+                <EditText
+                    android:id="@+id/input_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Enter 1st number"
+                    android:background="@drawable/edit_text_outline"/>
 
-            <Spinner
-                android:id="@+id/spinner_to"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:prompt="@string/prompt_to_unit"
-                android:background="@drawable/spinner_outline" />
+                <Spinner
+                    android:id="@+id/spinner_from"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_outline"/>
+
+                <Spinner
+                    android:id="@+id/spinner_to"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_outline"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textResult"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="12dp"
+                android:background="@color/result_box"
+                android:gravity="center"
+                android:text=""
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textResult"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="12dp"
-            android:background="@color/result_box"
-            android:gravity="center"
-            android:text=""
-            android:textSize="16sp" />
+        <Button
+            android:id="@+id/button_convert"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="CONVERT"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/purple_500"/>
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button_convert"
-        android:layout_marginTop="24dp"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:text="CONVERT"
-        android:textAllCaps="true"
-        android:backgroundTint="@color/purple_500"/>
 </ScrollView>
