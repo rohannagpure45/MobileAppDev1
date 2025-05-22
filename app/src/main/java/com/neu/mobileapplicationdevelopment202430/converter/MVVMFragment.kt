@@ -17,9 +17,8 @@ class MVVMFragment : Fragment() {
 
     private var _binding: FragmentMvvmBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: ConverterViewModel by activityViewModels {
-        ConverterViewModel.Factory(ConvertUnitsUseCase(ConversionRepositoryImpl()))
-    }
+    private val viewModel: ConverterViewModel by activityViewModels()
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
