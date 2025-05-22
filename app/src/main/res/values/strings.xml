@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mobileapplicationdevelopment202430</string>
+    <string name="prompt_from_unit">From Unit</string>
+    <string name="prompt_to_unit">To Unit</string>
 </resources>
