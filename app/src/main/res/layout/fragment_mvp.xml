@@ -1,60 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/mvp_background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
-    <!-- Input value field -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Value:" />
-    <EditText
-        android:id="@+id/input_value"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter value"
-        android:inputType="numberDecimal" />
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
 
-    <!-- From unit selection -->
-    <TextView
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="From Unit:" />
-    <Spinner
-        android:id="@+id/spinner_from"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+      <!-- Left side inputs -->
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_weight="1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content">
 
-    <!-- To unit selection -->
-    <TextView
-        android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="To Unit:" />
-    <Spinner
-        android:id="@+id/spinner_to"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+          <EditText
+              android:id="@+id/input_value"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:hint="Enter 1st number"
+              android:background="@drawable/edit_text_outline" />
 
-    <!-- Convert button -->
-    <Button
-        android:id="@+id/button_convert"
-        android:layout_marginTop="24dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Convert" />
+          <Spinner
+              android:id="@+id/spinner_from"
+              android:layout_marginTop="12dp"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:prompt="From Unit"
+              android:background="@drawable/spinner_outline"/>
 
-    <!-- Result display box -->
-    <TextView
-        android:id="@+id/text_result"
-        android:layout_marginTop="24dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:padding="12dp"
-        android:background="?android:attr/editTextBackground" />
+          <Spinner
+              android:id="@+id/spinner_to"
+              android:layout_marginTop="12dp"
+              android:layout_width="match_parent"
+              android:layout_height="48dp"
+              android:prompt="To Unit"
+              android:background="@drawable/spinner_outline"/>
+      </LinearLayout>
 
-</LinearLayout>
+      <View
+          android:id="@+id/result_container"
+          android:layout_width="120dp"
+          android:layout_height="120dp"
+          android:layout_marginStart="12dp"
+          android:background="@color/result_box" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/button_convert"
+      android:layout_marginTop="24dp"
+      android:layout_width="match_parent"
+      android:layout_height="48dp"
+      android:text="CONVERT"
+      android:textAllCaps="true"
+      android:backgroundTint="@color/purple_500" />
+
+ </ScrollView>

@@ -8,19 +8,19 @@
 
     <Button
         android:id="@+id/button_mvp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MVP Converter"
-        android:paddingHorizontal="24dp"
-        android:paddingVertical="12dp" />
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="MVP"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/purple_500" />
 
     <Button
         android:id="@+id/button_mvvm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="MVVM Converter"
-        android:paddingHorizontal="24dp"
-        android:paddingVertical="12dp"
-        android:layout_marginTop="24dp" />
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:text="MVVM"
+        android:textAllCaps="true"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="12dp" />
 
 </LinearLayout>
