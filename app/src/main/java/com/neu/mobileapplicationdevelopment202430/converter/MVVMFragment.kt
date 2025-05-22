@@ -45,7 +45,7 @@ class MVVMFragment : Fragment() {
         viewModel.conversionResult.observe(viewLifecycleOwner) { state ->
             when (state) {
                 is ConversionUiState.Success -> {
-                    binding.textResult.text = state.resultText
+                    binding.textResult.text = "Result is ${state.resultText}"
                     binding.textResult.setTextColor(Color.BLACK)
                 }
                 is ConversionUiState.Error -> {

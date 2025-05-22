@@ -6,20 +6,30 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unit Converter"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp"/>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="#BEBEBE"
+            android:padding="16dp">
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
 
                 <EditText
                     android:id="@+id/input_value"
@@ -30,16 +40,18 @@
 
                 <Spinner
                     android:id="@+id/spinner_from"
-                    android:layout_marginTop="12dp"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:prompt="@string/from_unit_prompt"
                     android:background="@drawable/spinner_outline"/>
 
                 <Spinner
                     android:id="@+id/spinner_to"
-                    android:layout_marginTop="12dp"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:prompt="@string/to_unit_prompt"
                     android:background="@drawable/spinner_outline"/>
 
             </LinearLayout>
@@ -51,16 +63,16 @@
                 android:layout_marginStart="12dp"
                 android:background="@color/result_box"
                 android:gravity="center"
-                android:text=""
+                android:text="Result is"
                 android:textSize="16sp"/>
 
         </LinearLayout>
 
         <Button
             android:id="@+id/button_convert"
-            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"
+            android:layout_marginTop="24dp"
             android:text="CONVERT"
             android:textAllCaps="true"
             android:backgroundTint="@color/purple_500"/>

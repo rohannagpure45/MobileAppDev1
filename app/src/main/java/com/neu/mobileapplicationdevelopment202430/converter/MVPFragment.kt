@@ -66,8 +66,7 @@ class MVPFragment : Fragment(), UnitConverterView {
     // Implementation of UnitConverterView interface:
     override fun showResult(result: String) {
         // Display the converted result in the TextView
-        binding.textResult.text = result
-        // Ensure the result text is in normal color (black)
+        binding.textResult.text = "Result is $result"
         binding.textResult.setTextColor(Color.BLACK)
     }
 
